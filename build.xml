@@ -20,8 +20,8 @@
 	  </javac>	
 	</target>
 	
-    <target name = "checkstyle" failOnViolation="false">
-		<checkstyle config="sun_checks.xml">
+    <target name = "checkstyle">
+		<checkstyle config="sun_checks.xml" failOnViolation="false">
 			<fileset dir="src/example" includes="**/*.java"/>
 			<formatter type="xml" toFile="checkstyle_errors.xml"/>
 		</checkstyle>	
